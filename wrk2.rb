@@ -17,6 +17,6 @@ class Wrk2 < Formula
   end
 
   test do
-    system *%W{#{bin}/wrk -c 1 -t 1 -d 1 http://example.com/}
+    system *%W{#{bin}/wrk -c 1 -t 1 -d 1 -R 1 http://example.com/}
   end
 end
